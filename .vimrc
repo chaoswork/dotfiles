@@ -3,6 +3,9 @@ filetype off                  " required
 " Change mapleader
 let mapleader=","
 
+" fileencoding
+set fileencodings=ucs-bom,cp936,utf-8,gb18030,big5,euc-jp,euc-kr,latin1
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -116,7 +119,8 @@ filetype plugin indent on    " required
 
 " Use the Solarized Dark theme
 set background=light
-colorscheme solarized
+"colorscheme solarized
+colorscheme ron
 let g:solarized_termtrans=1
 
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
@@ -132,7 +136,7 @@ set ttyfast
 " Add the g flag to search/replace by default
 set gdefault
 " Use UTF-8 without BOM
-set encoding=utf-8 nobomb
+"set encoding=utf-8 nobomb
 " Don’t add empty newlines at the end of files
 set binary
 set noeol
@@ -157,7 +161,7 @@ set number
 " Enable syntax highlighting
 syntax on
 " Highlight current line
-set cursorline
+"set cursorline
 " Make tabs as wide as two spaces
 set tabstop=2
 set expandtab
