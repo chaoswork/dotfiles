@@ -6,6 +6,10 @@ let mapleader=","
 " fileencoding
 set fileencodings=ucs-bom,cp936,utf-8,gb18030,big5,euc-jp,euc-kr,latin1
 
+" set powerline 
+set rtp+=~/github-root/chaoswork/dotfiles/Powerline/powerline/bindings/vim
+
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -43,7 +47,7 @@ Plugin 'godlygeek/tabular'
 " Plugin 'plasticboy/vim-markdown'
 " let g:vim_markdown_folding_disabled=1
 
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 
 Plugin 'jiangmiao/auto-pairs'
 
