@@ -1,4 +1,6 @@
 set nocompatible              " be iMproved, required
+" change words with $
+set cpoptions+=$
 filetype off                  " required
 " Change mapleader
 let mapleader=","
