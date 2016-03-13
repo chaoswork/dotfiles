@@ -1,3 +1,7 @@
+# load local configuration
+ if [ -f .zshrc.local ];then
+    source .zshrc.local
+ fi
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -52,8 +56,6 @@ ZSH_THEME="chaoswork"
 plugins=(git autojump vi-mode)
 
 # User configuration
-
-export PATH=/Users/baidu/github-root/chaoswork/scripts/bin:$HOME/bin:/usr/local/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -84,13 +86,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 #PROMPT='%{$fg_bold[red]%} %{$fg_bold[green]%}%p%{$fg[cyan]%}%M:%d %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%}% %{$reset_color%}>'
-[[ -s /Users/baidu/.autojump/etc/profile.d/autojump.sh ]] && source /Users/baidu/.autojump/etc/profile.d/autojump.sh
+[[ -s $HOME/.autojump/etc/profile.d/autojump.sh ]] && source $HOME/.autojump/etc/profile.d/autojump.sh
 
-
-# PATH=/Users/baidu/github-root/chaoswork/dotfiles/PowerLine/scripts/:$PATH
-# powerline-daemon -q
-# POWERLINE_BASH_CONTINUATION=1
-# POWERLINE_BASH_SELECT=1
-#. /usr/local/lib/python2.7/dist-packages/powerline/bindings/bash/powerline.sh
-#. /Users/baidu/github-root/chaoswork/dotfiles/PowerLine/powerline/bindings/bash/powerline.sh
 export LSCOLORS="Exfxdxdxcxegedabagacad"
