@@ -7,6 +7,8 @@ let mapleader=","
 
 " fileencoding
 set fileencodings=ucs-bom,cp936,utf-8,gb18030,big5,euc-jp,euc-kr,latin1
+nmap <leader>g :e ++enc=gbk<CR>
+nmap <leader>G :e ++enc=utf-8<CR>
 
 " set powerline 
 set rtp+=~/github-root/chaoswork/dotfiles/Powerline/powerline/bindings/vim
