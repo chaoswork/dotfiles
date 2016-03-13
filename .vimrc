@@ -10,8 +10,6 @@ set fileencodings=ucs-bom,cp936,utf-8,gb18030,big5,euc-jp,euc-kr,latin1
 nmap <leader>g :e ++enc=gbk<CR>
 nmap <leader>G :e ++enc=utf-8<CR>
 
-" set powerline 
-set rtp+=~/github-root/chaoswork/dotfiles/Powerline/powerline/bindings/vim
 
 
 " set the runtime path to include Vundle and initialize
@@ -20,6 +18,16 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
+
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#hunks#enabled=0
+let g:airline#extensions#branch#enabled=1
+
+"let g:airline_powerline_fonts = 1
+
+
 
 " Elixir syntax
 " Plugin 'elixir-lang/vim-elixir'
@@ -60,7 +68,7 @@ Plugin 'szw/vim-g'
 
 " Plugin 'vim-ruby/vim-ruby'
 
-Plugin 'wlangstroth/vim-racket'
+"Plugin 'wlangstroth/vim-racket'
 
 " Plugin 'fatih/vim-go'
 
@@ -72,15 +80,21 @@ Plugin 'chrisbra/Colorizer'
 :let g:colorizer_auto_filetype='less,sass,scss,js,css,html'
 let g:colorizer_syntax = 1
 
+" gc :help commentary
 Plugin 'tpope/vim-commentary'
+
+" needed by airline
+Plugin 'tpope/vim-fugitive'
 
 Plugin 'Chiel92/vim-autoformat'
 noremap <F3> :Autoformat<CR><CR>
 
+" <leader><leader>w go to a word quickly
 Plugin 'Lokaltog/vim-easymotion'
 
 Plugin 'rking/ag.vim'
 
+" draw ascii
 Plugin 'vim-scripts/DrawIt'
 
 Plugin 'tpope/vim-eunuch'
@@ -174,8 +188,9 @@ syntax on
 set tabstop=2
 set expandtab
 " Show “invisible” characters
-" set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
-set lcs=tab:▸\ ,trail:·
+set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
+"set lcs=tab:▸\ ,trail:·
+
 set list
 " Highlight searches
 set hlsearch
@@ -231,11 +246,15 @@ if has("autocmd")
 	autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
 endif
 
+" Tab related
 au FileType scss setl sw=2 sts=2 et
 au FileType html setl sw=2 sts=2 et
 au FileType css setl sw=2 sts=2 et
 au FileType elm setl sw=2 sts=2 et
 au FileType go setl sw=2 sts=2 et
+
+set ts=4
+set sw=4
 
 set t_Co=256
 
