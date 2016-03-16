@@ -4,3 +4,10 @@ class $1Handler(RequestHandler):
         $2
 
 endsnippet
+
+snippet openfile "open file to read" b
+with open($1) as f:
+    for line in f:
+        $2
+
+endsnippet
