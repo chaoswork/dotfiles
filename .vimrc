@@ -261,6 +261,7 @@ au FileType html setl sw=2 sts=2 et
 au FileType css setl sw=2 sts=2 et
 au FileType elm setl sw=2 sts=2 et
 au FileType go setl sw=2 sts=2 et
+au FileType scala setl sw=4 sts=4 et
 
 set ts=4
 set sw=4
