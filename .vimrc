@@ -321,3 +321,4 @@ noremap <leader>ehp :! open https://hex.pm<CR>
 
 noremap <leader>gh :! open https://github.com<CR>
 
+imap jj <Esc>
