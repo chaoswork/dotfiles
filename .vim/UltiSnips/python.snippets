@@ -11,3 +11,7 @@ with open($1) as f:
         $2
 
 endsnippet
+snippet mapsort "map sort" b
+$1 = sorted($2.iteritems(), key=lambda d:d[1], reverse = True)
+endsnippet
+

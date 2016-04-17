@@ -68,7 +68,14 @@ Plugin 'godlygeek/tabular'
 " Plugin 'plasticboy/vim-markdown'
 " let g:vim_markdown_folding_disabled=1
 
-"Plugin 'Valloric/YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'
+let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
+let g:EclimCompletionMethod = 'omnifunc'
+
+" let g:ycm_semantic_triggers =  { 'cs,java,javascript,typescript,d,python,perl6,scala,vb,elixir,go' : ['.'] }
+
+
+Plugin 'davidhalter/jedi-vim'
 
 Plugin 'jiangmiao/auto-pairs'
 
@@ -317,3 +324,4 @@ noremap <leader>ehp :! open https://hex.pm<CR>
 noremap <leader>gh :! open https://github.com<CR>
 
 noremap <leader>mp :! make preview<CR>
+imap jj <Esc>
