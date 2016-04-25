@@ -272,6 +272,7 @@ au FileType scala setl sw=4 sts=4 et
 
 set ts=4
 set sw=4
+set sts=4
 
 set t_Co=256
 
