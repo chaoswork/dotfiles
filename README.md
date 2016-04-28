@@ -9,8 +9,8 @@ Below is my shell prompt:
 Include:
 * vi-mode status
 * last command's return value,
-* current word path
-* count of running background jobs 
+* current work path
+* number of background jobs 
 * git status
 
 

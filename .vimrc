@@ -262,6 +262,9 @@ if has("autocmd")
 	autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
 endif
 
+set ts=4
+set sw=4
+
 " Tab related
 au FileType scss setl sw=2 sts=2 et
 au FileType html setl sw=2 sts=2 et
@@ -269,6 +272,7 @@ au FileType css setl sw=2 sts=2 et
 au FileType elm setl sw=2 sts=2 et
 au FileType go setl sw=2 sts=2 et
 au FileType scala setl sw=4 sts=4 et
+au FileType ascii setl ts=8 sw=8 et
 
 set ts=4
 set sw=4
@@ -322,4 +326,5 @@ noremap <leader>ehp :! open https://hex.pm<CR>
 
 noremap <leader>gh :! open https://github.com<CR>
 
+noremap <leader>mp :! make preview<CR>
 imap jj <Esc>
