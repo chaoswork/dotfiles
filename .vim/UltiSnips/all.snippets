@@ -1,7 +1,11 @@
 snippet todo "This is a TODO reminder" i
-TODO: `echo $USER` ${1:desc} `!v strftime("%c")`
+TODO: `echo "huangchao"` ${1:desc} `!v strftime("%Y%m%d %H:%M:%S")`
 endsnippet
 
 snippet var$ "make a jquery dom access code" b
 var \$${1:name} = $('$2$1');
+endsnippet
+
+snippet log "This is a TODO reminder" i
+[`!v strftime("%Y%m%d-%H:%M:%S")`]	${1:desc} 
 endsnippet

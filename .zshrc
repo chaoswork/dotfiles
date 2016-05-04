@@ -1,6 +1,6 @@
 # set locale
-export LC_ALL="zh_CN.UTF-8"
-export LANG="zh_CN.UTF-8"
+#export LC_ALL="zh_CN.UTF-8"
+#export LANG="zh_CN.UTF-8"
 
 # load local configuration
  if [ -f .zshrc.local ];then
@@ -57,7 +57,7 @@ ZSH_THEME="chaoswork"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git autojump vi-mode)
+plugins=(git autojump )
 
 # User configuration
 # export MANPATH="/usr/local/man:$MANPATH"

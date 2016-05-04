@@ -68,7 +68,13 @@ Plugin 'godlygeek/tabular'
 " Plugin 'plasticboy/vim-markdown'
 " let g:vim_markdown_folding_disabled=1
 
-"Plugin 'Valloric/YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'
+let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
+let g:EclimCompletionMethod = 'omnifunc'
+
+" let g:ycm_semantic_triggers =  { 'cs,java,javascript,typescript,d,python,perl6,scala,vb,elixir,go' : ['.'] }
+
+
 Plugin 'davidhalter/jedi-vim'
 
 Plugin 'jiangmiao/auto-pairs'
@@ -166,7 +172,7 @@ set backspace=indent,eol,start
 " Optimize for fast terminal connections
 set ttyfast
 " Add the g flag to search/replace by default
-set gdefault
+"set gdefault
 " Use UTF-8 without BOM
 "set encoding=utf-8 nobomb
 " Don’t add empty newlines at the end of files
@@ -256,15 +262,21 @@ if has("autocmd")
 	autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
 endif
 
+set ts=4
+set sw=4
+
 " Tab related
 au FileType scss setl sw=2 sts=2 et
 au FileType html setl sw=2 sts=2 et
 au FileType css setl sw=2 sts=2 et
 au FileType elm setl sw=2 sts=2 et
 au FileType go setl sw=2 sts=2 et
+au FileType scala setl sw=4 sts=4 et
+au FileType ascii setl ts=8 sw=8 et
 
 set ts=4
 set sw=4
+set sts=4
 
 set t_Co=256
 
@@ -314,3 +326,5 @@ noremap <leader>ehp :! open https://hex.pm<CR>
 
 noremap <leader>gh :! open https://github.com<CR>
 
+noremap <leader>mp :! make preview<CR>
+imap jj <Esc>
