@@ -23,6 +23,18 @@
 
 (provide 'init)
 
+;; initial window settings
+(setq initial-frame-alist
+      '((background-color . "black")))
+
+;; subsequent window settings
+(setq default-frame-alist
+      '((background-color . "black")))
+
+(load-theme 'wombat t)
+
+
+
 ;; Save all tempfiles in $TMPDIR/emacs$UID/                                                        
 ;;(defconst emacs-tmp-dir (format "%s/%s/" temporary-file-directory  "emacs" ))
 (defconst emacs-tmp-dir (format "~/.%s.tmp/" "emacs" ))
@@ -44,3 +56,15 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+ (defun event-apply-control-shift-modifier (ignore-prompt)
+     "\\Add the Control+Shift modifier to the following event.
+ For example, type \\[event-apply-control-shift-modifier] SPC to enter Control-Shift-SPC."
+     (vector (event-apply-modifier
+ 	     (event-apply-modifier (read-event) 'shift 25 "S-")
+ 	     'control 26 "C-")))
+ (define-key function-key-map (kbd "C-x @ C") 'event-apply-control-shift-modifier)
+;(global-set-key (kbd "<return>") (kbd "RET") )
+(global-set-key  (kbd "C-RET") (kbd "C-<return>"))
+(add-hook 'org-mode-hook (lambda () (setq truncate-lines nil)))
+
