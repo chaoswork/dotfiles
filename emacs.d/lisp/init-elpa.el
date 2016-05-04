@@ -1,10 +1,11 @@
 ;; init-elpa.el
 (require 'package)
 ;; 增加软件包仓库
+(add-to-list 'package-archives '("elpy" . "https://jorgenschaefer.github.io/packages/"))
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/"))
 (when (< emacs-major-version 24)
-  (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
-(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/"))
+(add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
+;;(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/"))
 (add-to-list 'package-archives '("melpa-stable" . "http://melpa-stable.milkbox.net/packages/"))
 ;; 定义require-package函数
 (defun require-package (package &optional min-version no-refresh)

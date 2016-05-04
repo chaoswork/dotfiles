@@ -18,7 +18,10 @@
 (require 'init-ido)
 (require 'init-smex)
 (require 'ace-jump-mode)
+(require 'init-orgmode)
 (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
+
+(elpy-enable)
 
 (provide 'init)
 
