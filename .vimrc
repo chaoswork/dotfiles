@@ -69,6 +69,7 @@ Plugin 'godlygeek/tabular'
 " let g:vim_markdown_folding_disabled=1
 
 "Plugin 'Valloric/YouCompleteMe'
+Plugin 'davidhalter/jedi-vim'
 
 Plugin 'jiangmiao/auto-pairs'
 
