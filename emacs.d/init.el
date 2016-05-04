@@ -20,10 +20,23 @@
 (require 'ace-jump-mode)
 (require 'init-orgmode)
 (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
+(require 'magit)
 
 (elpy-enable)
 
 (provide 'init)
+
+;; initial window settings
+(setq initial-frame-alist
+      '((background-color . "black")))
+
+;; subsequent window settings
+(setq default-frame-alist
+      '((background-color . "black")))
+
+(load-theme 'wombat t)
+
+
 
 ;; Save all tempfiles in $TMPDIR/emacs$UID/                                                        
 ;;(defconst emacs-tmp-dir (format "%s/%s/" temporary-file-directory  "emacs" ))
@@ -49,3 +62,14 @@
 
 (require 'sql)
 (setq sql-mysql-login-params (append sql-mysql-login-params '(port)))
+(defun event-apply-control-shift-modifier (ignore-prompt)
+     "\\Add the Control+Shift modifier to the following event.
+ For example, type \\[event-apply-control-shift-modifier] SPC to enter Control-Shift-SPC."
+     (vector (event-apply-modifier
+ 	     (event-apply-modifier (read-event) 'shift 25 "S-")
+ 	     'control 26 "C-")))
+ (define-key function-key-map (kbd "C-x @ C") 'event-apply-control-shift-modifier)
+;(global-set-key (kbd "<return>") (kbd "RET") )
+(global-set-key  (kbd "C-RET") (kbd "C-<return>"))
+(add-hook 'org-mode-hook (lambda () (setq truncate-lines nil)))
+
