@@ -1,5 +1,5 @@
 #-- base --#
-set -g default-terminal "screen-256color"
+set -g default-terminal "xterm-256color"
 set -g display-time 3000
 set -g history-limit 65535
 #----------------------------------------------
@@ -57,10 +57,10 @@ unbind s
 #定制状态行
 
 
-set -g status-left "#[fg=blue] > #I < #[default] |" # 0:bash
-set -g status-right "#[fg=blue,bright][ #[fg=black]#W #[fg=blue]]#[default] #[fg=blue,bright]- %Y.%m.%d #[fg=blue]%H:%M #[default]"
+set -g status-left "#[fg=write] > #I < #[default] |" # 0:bash
+set -g status-right "#[fg=cyan][ #[fg=cyan]#W #[fg=cyan]]#[default] #[fg=yellow,bright]- %Y.%m.%d #[fg=yellow]%H:%M #[default]"
 set -g status-right-attr bright
-set -g status-bg "#FFFFD7"
+set -g status-bg "#1c1c1c"
 set -g status-fg white
 set -g set-clipboard on
 setw -g window-status-current-attr bright
@@ -92,12 +92,11 @@ bind -t vi-copy V rectangle-toggle # `V` changes between line- and columnwise se
 bind -t vi-copy Y copy-end-of-line # ^1
 bind p paste-buffer # `prefix + p` pastes the latest buffer
 
-# setw -g mouse-resize-pane on
-# setw -g mouse-select-pane on
-#  setw -g mouse-select-window on
+ # setw -g mouse-resize-pane on
+ # setw -g mouse-select-pane on
+ #  setw -g mouse-select-window on
 
 # move x clipboard into tmux paste buffer
 bind C-p run "tmux set-buffer \"$(xclip -o -sel clipbaord)\"; tmux paste-buffer"
 # move tmux copy buffer into x clipboard
 bind C-y run "tmux show-buffer | xclip -i -sel clipbaord"
-
