@@ -21,7 +21,7 @@
 (require 'init-orgmode)
 (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
 (require 'magit)
-
+(global-set-key (kbd "<f8>") 'magit-status) ;
 ;; jedi
 (autoload 'jedi:setup "jedi" nil t)
 (setq jedi:setup-keys t);注意这句的位置要靠前
