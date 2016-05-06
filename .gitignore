@@ -14,3 +14,5 @@ Thumbs.db
 .Trashes
 /emacs.d/ido.last
 /emacs.d/recentf
+/emacs.d/ac-comphist.dat
+.python-environments
