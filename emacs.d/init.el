@@ -21,6 +21,8 @@
 (require 'init-orgmode)
 (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
 (require 'magit)
+(global-set-key (kbd "<f8>") 'magit-status) ;
+
 (require 'init-elpy)
 ;; jedi
 (autoload 'jedi:setup "jedi" nil t)
