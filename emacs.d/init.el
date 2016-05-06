@@ -21,7 +21,7 @@
 (require 'init-orgmode)
 (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
 (require 'magit)
-
+(require 'init-elpy)
 ;; jedi
 (autoload 'jedi:setup "jedi" nil t)
 (setq jedi:setup-keys t);注意这句的位置要靠前
@@ -32,6 +32,7 @@
 (elpy-enable)
 (setq elpy-rpc-backend "jedi")
 
+;;(add-hook 'python-mode-hook (highlight-indentation-mode 0))
 
 (require 'init-themes)
 (provide 'init)
