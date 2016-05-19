@@ -34,6 +34,8 @@
 (elpy-enable)
 (setq elpy-rpc-backend "jedi")
 
+(require 'init-auto-complete)
+
 ;;(add-hook 'python-mode-hook (highlight-indentation-mode 0))
 
 (require 'init-themes)

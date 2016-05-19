@@ -16,3 +16,4 @@ Thumbs.db
 /emacs.d/recentf
 /emacs.d/ac-comphist.dat
 .python-environments
+/emacs.d/tramp
