@@ -17,3 +17,4 @@ Thumbs.db
 /emacs.d/ac-comphist.dat
 .python-environments
 /emacs.d/tramp
+.zshrc.local*
