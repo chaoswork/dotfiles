@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: who
+# key: who
+# --
+#!/usr/bin/env python
+# coding: utf-8
+
+# Author:	Chao Huang
+# Date:		`(current-time-string)`
+
