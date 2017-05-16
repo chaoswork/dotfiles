@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: forline
+# key: forline
+# --
+for line in sys.stdin:
+    cols = line.strip().split('\t')
+    if len(cols) < n:
+        continue

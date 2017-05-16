@@ -3,8 +3,11 @@
 # key: who
 # --
 #!/usr/bin/env python
-# coding: utf-8
+# -*- coding: utf-8 -*-
 
-# Author:	Chao Huang
-# Date:		`(current-time-string)`
+"""
+Author:	Chao Huang (huangchao07@baidu.com)
+Date: `(current-time-string)`
+Brief:
+"""
 
