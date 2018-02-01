@@ -68,7 +68,7 @@ Plugin 'godlygeek/tabular'
 " Plugin 'plasticboy/vim-markdown'
 " let g:vim_markdown_folding_disabled=1
 
-Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Valloric/YouCompleteMe'
 let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
 let g:EclimCompletionMethod = 'omnifunc'
 

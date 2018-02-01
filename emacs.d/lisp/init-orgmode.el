@@ -12,6 +12,7 @@
 
 ;; fontify code in code blocks
 (setq org-src-fontify-natively t)
-
+(eval-after-load "org"
+  '(require 'ox-md nil t))
 
 (provide 'init-orgmode)

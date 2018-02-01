@@ -60,14 +60,13 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
-
+ '(custom-enabled-themes (quote (monokai)))
  '(custom-safe-themes
    (quote
     ("0c49a9e22e333f260126e4a48539a7ad6e8209ddda13c0310c8811094295b3a3" "afbb40954f67924d3153f27b6d3399df221b2050f2a72eb2cfa8d29ca783c5a8" "a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "bb08c73af94ee74453c90422485b29e5643b73b05e8de029a6909af6a3fb3f58" "628278136f88aa1a151bb2d6c8a86bf2b7631fbea5f0f76cba2a0079cd910f7d" "06f0b439b62164c6f8f84fdda32b62fb50b6d00e8b01c2208e55543a6337433a" "1b8d67b43ff1723960eb5e0cba512a2c7a2ad544ddb2533a90101fd1852b426e" "4cf3221feff536e2b3385209e9b9dc4c2e0818a69a1cdb4b522756bcdf4e00a4" default)))
-
  '(org-agenda-files
    (quote
-    ("~/git-local/chaoswork/work-records/daily-work/workspace/work.org"))))
+    ("~/git-local/chaoswork/medical/ad_audit_table/README.org" "~/git-local/chaoswork/eight-forbidden/score/README.org"))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -88,3 +87,18 @@
 (global-set-key  (kbd "C-RET") (kbd "C-<return>"))
 (add-hook 'org-mode-hook (lambda () (setq truncate-lines nil)))
 
+(setq-default c-basic-offset 4)
+(setq-default indent-tabs-mode nil)
+
+(setq load-path (cons "/usr/local/Cellar/global/6.5.2/bin/" load-path))
+(setq load-path (cons "/usr/share/emacs/site-lisp/global/" load-path))
+(autoload 'gtags-mode "gtags" "" t)
+(setq gtags-suggested-key-mapping t)
+
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '(
+   (sh . t)
+   (python . t)
+  )
+)

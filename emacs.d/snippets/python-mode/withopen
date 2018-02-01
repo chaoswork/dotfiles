@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: withopen
+# key: withopen
+# --
+with open('') as f:
+    for line in f:
+        cols = line.strip('\n').split('\t')
+        if len(cols) < n:
+            continue

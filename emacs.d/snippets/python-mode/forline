@@ -3,6 +3,6 @@
 # key: forline
 # --
 for line in sys.stdin:
-    cols = line.strip().split('\t')
+    cols = line.strip('\n').split('\t')
     if len(cols) < n:
         continue
