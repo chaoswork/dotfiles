@@ -93,3 +93,6 @@ source $ZSH/oh-my-zsh.sh
 [[ -s $HOME/.autojump/etc/profile.d/autojump.sh ]] && source $HOME/.autojump/etc/profile.d/autojump.sh
 
 export LSCOLORS="Exfxdxdxcxegedabagacad"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"

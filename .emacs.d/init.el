@@ -100,5 +100,6 @@
  '(
    (sh . t)
    (python . t)
+   (latex . t)
   )
 )

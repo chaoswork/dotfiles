@@ -12,9 +12,9 @@ Thumbs.db
 # Files that might appear on external disks
 .Spotlight-V100
 .Trashes
-/emacs.d/ido.last
-/emacs.d/recentf
-/emacs.d/ac-comphist.dat
+/.emacs.d/ido.last
+/.emacs.d/recentf
+/.emacs.d/ac-comphist.dat
 .python-environments
-/emacs.d/tramp
+/.emacs.d/tramp
 .zshrc.local*
