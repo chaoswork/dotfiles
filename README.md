@@ -1,14 +1,14 @@
 # HuangChao's dotfiles
 
-my current dotfiles. Based on [tyrchen](https://github.com/tyrchen/dotfiles).
+My current dotfiles. Based on [tyrchen](https://github.com/tyrchen/dotfiles).
 
-Below is my shell prompt:
+My shell prompt:
 
 ![Screenshot of my shell prompt](http://chaoswork.github.io/images/oh-my-zsh.png)
 
 Include:
 * vi-mode status
-* last command's return value,
+* last command's return value
 * current work path
 * number of background jobs 
 * git status
