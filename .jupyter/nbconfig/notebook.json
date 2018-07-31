@@ -1,0 +1,20 @@
+{
+  "Cell": {
+    "cm_config": {
+      "lineNumbers": false
+    }
+  }, 
+  "load_extensions": {
+    "execute_time/ExecuteTime": true, 
+    "nbextensions_configurator/config_menu/main": true, 
+    "codefolding/main": true, 
+    "python-markdown/main": false, 
+    "highlighter/highlighter": true, 
+    "code_prettify/autopep8": true, 
+    "contrib_nbextensions_help_item/main": true
+  }, 
+  "Notebook": {
+    "Header": false, 
+    "Toolbar": true
+  }
+}
