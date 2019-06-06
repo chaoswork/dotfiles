@@ -10,10 +10,15 @@ function doIt() {
 	--exclude "themes" --exclude "README.md" --exclude "LICENSE-MIT.txt" -avh --no-perms . ~;
 	source ~/.bash_profile;
 
+  # install Vundle
   git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
   if [ ! -d $HOME/.vim/UltiSnips ]; then
-    ln -s $DOTFILES/.vim/UltiSnips $HOME/.vim/UltiSnips
+    ln -s ./.vim/UltiSnips $HOME/.vim/UltiSnips
   fi
+  # install oh-my-zsh
+  git clone https://github.com/robbyrussell/oh-my-zsh.git
+  mv oh-my-zsh $HOME/.oh-my-zsh
+  cp ./themes/chaoswork.zsh-theme $HOME/.oh-my-zsh/themes
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
