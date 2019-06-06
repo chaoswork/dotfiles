@@ -13,7 +13,7 @@ function doIt() {
   # install Vundle
   git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
   if [ ! -d $HOME/.vim/UltiSnips ]; then
-    ln -s ./.vim/UltiSnips $HOME/.vim/UltiSnips
+    ln -s ${HOME}/dotfiles/.vim/UltiSnips $HOME/.vim/UltiSnips
   fi
   # install oh-my-zsh
   git clone https://github.com/robbyrussell/oh-my-zsh.git
