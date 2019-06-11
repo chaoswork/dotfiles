@@ -27,7 +27,10 @@ let g:airline#extensions#branch#enabled=1
 
 "let g:airline_powerline_fonts = 1
 
-
+" buffers
+nnoremap <Tab> :bnext<CR>
+nnoremap <S-Tab> :bprevious<CR>
+nnoremap <C-X> :bdelete<CR>
 
 " Elixir syntax
 " Plugin 'elixir-lang/vim-elixir'
