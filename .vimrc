@@ -39,6 +39,8 @@ Plugin 'SirVer/ultisnips'
 
 " " Snippets are separated from the engine. Add this if you want them:
 Plugin 'honza/vim-snippets'
+let g:snips_author = "huangchao"
+let g:snips_email = "chaohuang@didiglobal.com"
 
 " " Trigger configuration. Use tab with ultisnips and YCM
 " http://stackoverflow.com/questions/14896327/ultisnips-and-youcompleteme
@@ -127,28 +129,28 @@ Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/syntastic'
 
 " fuzzy file find
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 " vim cscope
 " Plugin 'vim-scripts/cscope.vim'
 
 " Elm lang
-Plugin 'lambdatoast/elm.vim'
+" Plugin 'lambdatoast/elm.vim'
 
 " ansible yaml support
-Plugin 'chase/vim-ansible-yaml'
+" Plugin 'chase/vim-ansible-yaml'
 
 " fireplace for clojure
-Plugin 'tpope/vim-fireplace'
-Plugin 'tpope/vim-classpath'
-Plugin 'tpope/vim-dispatch'
+" Plugin 'tpope/vim-fireplace'
+" Plugin 'tpope/vim-classpath'
+" Plugin 'tpope/vim-dispatch'
 
 " precision editing for s-expression
 Plugin 'guns/vim-sexp'
 
 " clojure runtime files
-Plugin 'guns/vim-clojure-static'
-Plugin 'guns/vim-clojure-highlight'
+" Plugin 'guns/vim-clojure-static'
+" Plugin 'guns/vim-clojure-highlight'
 Plugin 'kien/rainbow_parentheses.vim'
 
 " All of your Plugins must be added before the following line
