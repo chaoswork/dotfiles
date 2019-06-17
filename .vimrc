@@ -43,7 +43,7 @@ Plugin 'SirVer/ultisnips'
 " " Snippets are separated from the engine. Add this if you want them:
 Plugin 'honza/vim-snippets'
 let g:snips_author = "huangchao"
-let g:snips_email = "chaohuang@didiglobal.com"
+" let g:snips_email = 
 
 " " Trigger configuration. Use tab with ultisnips and YCM
 " http://stackoverflow.com/questions/14896327/ultisnips-and-youcompleteme
@@ -80,7 +80,7 @@ let g:EclimCompletionMethod = 'omnifunc'
 " let g:ycm_semantic_triggers =  { 'cs,java,javascript,typescript,d,python,perl6,scala,vb,elixir,go' : ['.'] }
 
 
-Plugin 'davidhalter/jedi-vim'
+" Plugin 'davidhalter/jedi-vim'
 
 Plugin 'jiangmiao/auto-pairs'
 
@@ -93,7 +93,7 @@ Plugin 'szw/vim-g'
 
 " Plugin 'fatih/vim-go'
 
-Plugin 'cakebaker/scss-syntax.vim'
+" Plugin 'cakebaker/scss-syntax.vim'
 
 Plugin 'chrisbra/Colorizer'
 
@@ -128,11 +128,12 @@ Plugin 'sheerun/vim-polyglot'
 " change surroundins - cs/ds/ysiw/yss
 Plugin 'tpope/vim-surround'
 
-" do syntax check
-Plugin 'scrooloose/syntastic'
+" do syntax check, too slow, change it
+" Plugin 'vim-syntastic/syntastic'
 
 " fuzzy file find
 Plugin 'ctrlpvim/ctrlp.vim'
+
 
 " vim cscope
 " Plugin 'vim-scripts/cscope.vim'
